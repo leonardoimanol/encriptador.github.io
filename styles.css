@@ -1,0 +1,380 @@
+/*cuerpo de la página*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #e5f0ff;
+}
+/*encabezado*/
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #e5f0ff;
+    box-shadow: 1px 1px 30px 1px #d9e3f0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logo {
+    width: 5%;
+    height: auto;
+    padding-left: 1%;
+}
+h1 {
+    font-size: 250%;
+    color: rgb(118, 179, 220);
+    font-family: 'Arial Narrow';
+}
+.redes {
+    width: 10%;
+    height: 100%;
+    margin-right: 0%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.red {
+    width: 25%;
+    height: 25%;
+}
+/*principal*/
+main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*parte izquierda (texto)*/
+section.izquierda {
+    width: 60%;
+    height: 75vh;
+    background-color: #e5f0ff;
+    border-radius: 20px;
+    /*box-shadow: 1px 1px 10px 1px #f988ff; */
+    padding-top: 3%;
+    text-align: center;
+}
+.area {
+    width: 90%;
+    height: 75%;
+    background-color: #e5f0ff;
+    border-color: rgb(142, 210, 255);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px #d6e0ee;
+    resize: none;
+    font-size: 150%;
+    color: rgb(118, 179, 220);
+    text-align: center;
+    padding: 3%;
+    margin-bottom: 3%;
+}
+.encriptar {
+    width: 20%;
+    height: 7%;
+    margin-right: 3%;
+    border-radius: 20px;
+    background: rgb(142, 210, 255);
+    color: black;
+    transition: width 0.2s ease-in-out;
+}
+.encriptar:hover {
+    background: rgb(118, 179, 220);
+    color: black;
+    width: 21%
+}
+.desencriptar {
+    width: 20%;
+    height: 7%;
+    margin-right: 3%;
+    border-radius: 20px;
+    background: #e5f0ff;
+    color: black;
+    transition: width 0.2s ease-in-out;
+}
+.desencriptar:hover {
+    background: #c6cfdb;
+    color: black;
+    width: 21%
+}
+
+
+/*parte derecha*/
+section.derecha {
+    width: 35%;
+    height: 65vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgb(142, 210, 255);
+    text-align: center;
+    padding-top: 3%;
+    line-height: 200%;
+    overflow: hidden;
+}
+.imagenn {
+    width: 55%;
+    height: 60%;
+    margin-top: 5%;
+    transition: width 0.2s ease-in-out;
+}
+.imagenn:hover {
+    width: 60%;
+}
+.subtitulo {
+    font-size: 130%;
+    color: rgb(0, 0, 0);
+    font-family: 'Exo 2', sans-serif;
+}
+.parrafo {
+    font-size: 110%;
+    color: grey;
+    margin-bottom: 100%;
+}
+.ocultar {
+    display: none;
+}
+
+
+/*segunda sección (atrás)*/
+.mensaje {
+    width: 80%;
+    height: 75%;
+    background-color: white;
+    border-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgb(142, 210, 255);
+    resize: none;
+    font-size: 150%;
+    color: black;
+    text-align: center;
+    padding: 3%;
+    margin-bottom: 4%;
+}
+.copiar {
+    width: 25%;
+    height: 8.5%;
+    margin-right: 3%;
+    border-radius: 20px;
+    background: rgb(142, 210, 255);
+    color: black;
+    transition: width 0.2s ease-in-out;
+}
+.copiar:hover {
+    background: rgb(118, 179, 220);
+    color: black;
+    width: 27%
+}
+.escuchar {
+    width: 25%;
+    height: 8.5%;
+    border-radius: 20px;
+    background: rgb(142, 210, 255);
+    color: black;
+    transition: width 0.2s ease-in-out;
+}
+.escuchar:hover {
+    background: rgb(118, 179, 220);
+    color: black;
+    width: 27%
+}
+
+
+/*pie de página*/
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #e5f0ff;
+    box-shadow: 1px 1px 30px 1px rgb(142, 210, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    font-size: 70%;
+    color: #000000;
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: 1px 1px 2px white;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+footer p span {
+    color: rgb(0, 0, 0);
+}
+
+
+/*media query*/
+/*tablet*/
+@media screen and (max-width: 768px) and (max-height: 1174px) {
+  header {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .logo {
+    width: 10%;
+    height: auto;
+  }
+  h1 {
+    font-size: 250%;
+  }
+  .redes {
+    width: 15%;
+  }
+  .red {
+    width: 90%;
+  }
+  main {
+    display: block;
+  }
+  section.izquierda {
+    width: 90%;
+    height: 35vh;
+    padding-top: 4%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .area {
+    font-size: 150%;
+    padding: 3%;
+    margin-bottom: 3%;
+  }
+  .encriptar {
+    width: 30%;
+    height: 12%;
+    margin-right: 3%;
+  }
+  .desencriptar {
+    width: 30%;
+    height: 12%;
+  }
+  section.derecha {
+    width: 90%;
+    height: 35vh;
+    padding-top: 4%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .imagenn {
+    width: 40%;
+    margin-top: 4%;
+  }
+  .subtitulo {
+    font-size: 130%;
+  }
+  .parrafo {
+    font-size: 110%;
+  }
+  .mensaje {
+    width: 90%;
+    font-size: 150%;
+    padding: 3%;
+    margin-bottom: 2%;
+  }
+  .copiar {
+    width: 30%;
+    height: 12%;
+    margin-right: 3%;
+  }
+  .escuchar {
+    width: 30%;
+    height: 12%;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+  footer p {
+    font-size: 100%;
+  }
+}
+
+
+/*móvil*/
+@media screen and (max-width: 375px) and (max-height: 933px) {
+  header {
+    width: 100%;
+    margin-bottom: 8%;
+  }
+  .logo {
+    width: 10%;
+    height: auto;
+  }
+  h1 {
+    font-size: 180%;
+  }
+  .redes {
+    width: 15%;
+  }
+  .red {
+    width: 90%;
+  }
+  main {
+    display: block;
+  }
+  section.izquierda {
+    width: 90%;
+    height: 35vh;
+    padding-top: 4%;
+    margin-bottom: 8%;
+  }
+  .area {
+    font-size: 150%;
+    padding: 3%;
+    margin-bottom: 5%;
+  }
+  .encriptar {
+    width: 35%;
+    height: 12%;
+    margin-right: 3%;
+    font-size: 60%; 
+  }
+  .desencriptar {
+    width: 35%;
+    height: 12%;
+    font-size: 60%;
+  }
+  section.derecha {
+    width: 90%;
+    height: 35vh;
+    padding-top: 4%;
+    margin-bottom: 8%;
+  }
+  .imagenn {
+    width: 55%;
+    margin-top: 5%;
+  }
+  .subtitulo {
+    font-size: 100%;
+  }
+  .parrafo {
+    font-size: 80%;
+  }
+  .mensaje {
+    width: 90%;
+    font-size: 150%;
+    padding: 3%;
+    margin-bottom: 4%;
+  }
+  .copiar {
+    width: 35%;
+    height: 12%;
+    margin-right: 3%;
+    font-size: 60%;
+  }
+  .escuchar {
+    width: 35%;
+    height: 12%;
+    font-size: 60%;
+  }
+  footer p {
+    font-size: 80%;
+  }
+}

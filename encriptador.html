@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Encriptador2023</title>
+</head>
+<body>
+    <header>
+        <h1 data-aos="slide-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">ENCRIPTADOR</h1>
+    </header>
+
+    <main>
+    <!--"ingresartexto"-->
+        <section class="izquierda" data-aos="fade-right" data-aos-duration="3000">
+            <textarea class="area" placeholder="Ingrese el texto aquí"></textarea>
+            <input class="encriptar" type="button" value="ENCRIPTAR">
+            <input class="desencriptar" type="button" value="DESENCRIPTAR">
+        </section>
+
+        <!--mensajeEncriptado-->
+        <section class="derecha" data-aos="fade-left" data-aos-duration="3000">
+            <img class="imagenn" src="./images/encriptado.png" alt="imagenn">
+            <h3 class="subtitulo">Aquí aparece tu mensaje encriptado</h3>
+            <p class="parrafo">Ningun mensaje aún...</p>
+            <textarea class="mensaje"></textarea>
+            <input class="copiar" type="button" value="COPIAR">
+            <input class="escuchar" type="button" value="ESCUCHAR">
+        </section>
+    </main>   
+
+    <footer>
+        <p>Web Dev: <span>leonardoimanol86@gmail.com</span></p>
+        <div class="redes">
+            <a href="https://github.com/leonardoimanol" target="_blank"><img class="red" src="./images/github.png" alt="red"></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    
+</body>
+</html>
